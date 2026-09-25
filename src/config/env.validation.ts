@@ -30,23 +30,23 @@ export class EnvironmentVariables {
 
   @IsString()
   @IsNotEmpty()
-  DB_HOST: string | undefined;
+  DB_HOST: string;
 
   @IsInt()
   @Min(1)
   @Max(65535)
-  DB_PORT: number | undefined;
+  DB_PORT: number;
 
   @IsString()
   @IsNotEmpty()
-  DB_USER: string | undefined;
+  DB_USER: string;
   
   @IsString()
-  DB_PASSWORD: string | undefined;
+  DB_PASSWORD: string;
   
   @IsString()
   @IsNotEmpty()
-  DB_NAME: string | undefined;
+  DB_NAME: string;
   
   @IsBooleanString()
   @IsOptional()
@@ -54,11 +54,11 @@ export class EnvironmentVariables {
 
   @IsString()
   @IsNotEmpty()
-  REDIS_URL: string | undefined;
+  REDIS_URL: string;
 
   @IsString()
   @IsNotEmpty()
-  JWT_SECRET: string | undefined;
+  JWT_SECRET: string;
   
   @IsString()
   @IsOptional()
@@ -66,15 +66,15 @@ export class EnvironmentVariables {
 
   @IsString()
   @IsNotEmpty()
-  CLOUDINARY_CLOUD_NAME: string | undefined;
+  CLOUDINARY_CLOUD_NAME: string;
   
   @IsString()
   @IsNotEmpty()
-  CLOUDINARY_API_KEY: string | undefined;
+  CLOUDINARY_API_KEY: string;
   
   @IsString()
   @IsNotEmpty()
-  CLOUDINARY_API_SECRET: string | undefined;
+  CLOUDINARY_API_SECRET: string;
 
   @IsString()
   @IsOptional()
